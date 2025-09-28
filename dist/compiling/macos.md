@@ -9,10 +9,10 @@ On macOS, ImHex is built through regular GCC and LLVM clang.
 cd ImHex
 mkdir -p build
 cd build
-CC=$(brew --prefix llvm)/bin/clang        \
-CXX=$(brew --prefix llvm)/bin/clang++     \
-OBJC=$(brew --prefix llvm)/bin/clang      \
-OBJCXX=$(brew --prefix llvm)/bin/clang++  \
+CC=$(brew --prefix llvm@20)/bin/clang        \
+CXX=$(brew --prefix llvm@20)/bin/clang++     \
+OBJC=$(brew --prefix llvm@20)/bin/clang      \
+OBJCXX=$(brew --prefix llvm@20)/bin/clang++  \
 cmake -G "Ninja"                          \
   -DCMAKE_BUILD_TYPE=Release              \
   -DCMAKE_INSTALL_PREFIX="./install"      \
